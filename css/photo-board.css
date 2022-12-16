@@ -1,0 +1,74 @@
+.photo-board {
+  margin: 0 auto;
+  width: var(--width);
+  max-width: var(--max-width);
+}
+
+.photo-board .board-container {
+  width: 100%;
+  height: 1000px;
+}
+
+.photo-board .board-container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.photo-board figure {
+  width: 23%;
+  height: 50%;
+}
+
+.photo-board figure:first-child {
+  width: 54%;
+  height: 100%;
+}
+
+.photo-board .container:nth-child(even) figure {
+  float: right;
+  padding-left: 1em;
+}
+
+.photo-board .container:nth-child(even) figure:first-child {
+  float: left;
+  padding-left: 0;
+}
+
+.photo-board .container:nth-child(odd) figure {
+  float: left;
+  padding-right: 1em;
+}
+
+.photo-board .container:nth-child(odd) figure:first-child {
+  float: right;
+  padding-right: 0;
+}
+
+.photo-board figure:first-child figcaption {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.photo-board figure figcaption {
+  margin-top: 1em;
+}
+
+.photo-board figure figcaption p {
+  color: #6c6d6e;
+  line-height: 1.1em;
+}
+
+.photo-board figure figcaption time {
+  display: block;
+  margin: 1em 0;
+}
+
+.photo-board figure a {
+  display: block;
+  text-decoration: none;
+}
+
+.photo-board figure a:hover {
+  opacity: 0.75;
+}

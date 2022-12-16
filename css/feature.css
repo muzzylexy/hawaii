@@ -1,0 +1,93 @@
+.feature {
+  position: relative;
+  height: 700px;
+  color: #fff;
+  background: transparent url("../unfiled/33.png") local no-repeat center / 100vw;
+  margin-bottom: 10em;
+}
+
+.feature > * {
+  margin: 0 auto;
+  width: var(--width);
+  max-width: var(--max-width);
+}
+
+.feature .title-1::before {
+  background-color: #fff;
+}
+
+.feature .txt-container > * {
+  width: 40%;
+}
+
+.feature .txt-container h3 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 0.8em;
+}
+
+.feature .fig-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.feature figure {
+  position: relative;
+  margin-right: 2em;
+  width: 40%;
+  aspect-ratio: 2 / 1;
+}
+
+.feature figure a {
+  display: inline-block;
+}
+
+.feature figure .picture {
+  background-color: #000;
+}
+
+.feature figure img {
+  transition: opacity 0.4s;
+}
+
+.feature figure figcaption {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+  width: calc(100% - 2em);
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+.feature figure figcaption::after {
+  content: "";
+  margin-left: 0.5em;
+  width: 1.3em;
+  height: 1.3em;
+  background: no-repeat center/100% url("../img/right_arrow_short_white.svg");
+  border: 4px solid #fff;
+  border-radius: 50%;
+  vertical-align: text-bottom;
+  transition: all 0.2s;
+}
+
+.feature figure:hover figcaption {
+  color: #f88167;
+}
+
+.feature figure:hover figcaption::after {
+  color: #f88167;
+  background: no-repeat center/100% url("../img/right_arrow_short.svg");
+  border: 4px solid #f88167;
+}
+
+.feature figure:hover img {
+  opacity: 0.4;
+}

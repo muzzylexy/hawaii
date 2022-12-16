@@ -1,0 +1,242 @@
+.title h1 {
+  margin: 1rem 1rem 0;
+  font-size: 3em;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.title h2 {
+  margin: 1rem 1rem 0;
+  font-size: 1rem;
+  font-weight: 300;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.title .container {
+  /* align-content:; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1em 0;
+  width: 100%;
+  max-width: var(--max-width);
+  z-index: 1;
+  flex-flow: row-reverse wrap;
+}
+
+/* for small view, use justify-content: flex-end; */
+
+.banner .container {
+  --banner-height: 30em;
+
+  position: relative;
+  margin-top: -2em;
+  width: 100%;
+  height: var(--banner-height);
+  z-index: 0;
+}
+
+.banner figure {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 70%;
+  height: 100%;
+  border-radius: 0 20px 0 0;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner article {
+  position: absolute;
+  top: 0;
+  right: 0;
+  writing-mode: vertical-rl;
+  line-height: 2.25em;
+  padding: calc(var(--banner-height) *0.225) 0 calc(var(--banner-height) *0.05);
+}
+
+.banner em {
+  white-space: nowrap;
+}
+
+.banner em::before {
+  content: "[ ";
+  white-space: pre;
+}
+
+.banner em::after {
+  content: " ]";
+  white-space: pre;
+}
+
+.about,
+.detailed-info {
+  background-color: #f9f6f5;
+}
+
+.about .container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 3em 0;
+  width: 100%;
+  max-width: var(--max-width);
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.about figure {
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+  margin: calc(-30em*0.3) 2em 2em;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.about img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about article {
+  margin: 2em;
+  flex: 1;
+}
+
+.about article h2 {
+  font-size: 0.8em;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.about article p {
+  font-size: 0.8em;
+  line-height: 1.3em;
+}
+
+.about article a {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 0.8em;
+}
+
+.detailed-info .txt-container {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+.detailed-info .txt-container h2 {
+  padding-left: 3%;
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 0.9em;
+  margin-bottom: 2em;
+}
+
+.detailed-info .txt-container em {
+  color: #f65936;
+}
+
+.detailed-info .txt-container h3 {
+  font-size: 0.5em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.detailed-info .fig-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-bottom: 3em;
+  width: 100%;
+  max-width: var(--max-width);
+  flex-wrap: nowrap;
+}
+
+.detailed-info figure {
+  position: relative;
+  margin: 1em;
+  width: 33%;
+}
+
+.detailed-info .picture {
+  width: 100%;
+  height: 600px;
+  color: #000;
+  background-color: #000;
+}
+
+.detailed-info img {
+  object-position: 70% 50%;
+  opacity: 0.75;
+}
+
+.detailed-info figcaption {
+  position: absolute;
+  top: 0;
+  padding: 8%;
+  width: 100%;
+  height: 100%;
+  text-overflow: ellipsis;
+  color: #f1f1f1;
+}
+
+.detailed-info .fig-container h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.detailed-info .fig-container a {
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 0.7em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+  border: 2px solid #f9f6f5;
+  border-radius: 5px;
+}
+
+.detailed-info .fig-container p {
+  position: absolute;
+  bottom: 3em;
+  overflow: hidden;
+  width: 85%;
+  height: 50%;
+  font-size: 0.7em;
+  visibility: hidden;
+}
+
+.detailed-info .fig-container small {
+  position: absolute;
+  bottom: 1em;
+  display: block;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: #b3b4b5;
+}
+
+
+.detailed-info figure:hover img {
+  opacity: 0.25;
+  transition: 0.2s;
+}
+
+.detailed-info figure:hover p {
+  visibility: visible;
+  transition: 0.2s;
+}

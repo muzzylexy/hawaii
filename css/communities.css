@@ -1,0 +1,9 @@
+.communities {
+  margin: 0 auto;
+  width: var(--width);
+  max-width: var(--max-width);
+}
+
+.communities .gallery {
+  height: 200px;
+}
