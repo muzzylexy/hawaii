@@ -1,0 +1,82 @@
+footer {
+  background-color: #202124;
+}
+
+footer .hyperlink {
+  display: flex;
+  margin: 0 auto;
+  width: var(--width);
+  max-width: var(--max-width);
+  color: #fff;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem 0;
+  border-bottom: 1px solid whitesmoke;
+}
+
+footer .hyperlink h1:nth-child(2) {
+  margin-top: 0.3em;
+  font-size: 0.7em;
+}
+
+footer .hyperlink .col {
+  margin: 2rem;
+}
+
+footer .hyperlink a {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+}
+
+footer .hyperlink a:hover {
+  color: #f88167;
+}
+
+footer .hyperlink .col:last-child > *::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: no-repeat center/100% url("../img/s_01.svg");
+}
+
+footer .hyperlink .col:last-child > *:hover {
+  color: #fff;
+  opacity: 0.5;
+}
+
+footer .info {
+  margin: 0 auto;
+  width: var(--width);
+  max-width: var(--max-width);
+  color: #fff;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .info .col {
+  width: 25%;
+}
+
+footer .info .col:nth-child(2) a {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+footer .info .col:nth-child(2) a img {
+  width: 100%;
+}
+
+footer .info .col:nth-child(3) {
+  text-align: right;
+}
+
+footer .info .col:nth-child(3) a {
+  margin: 0 0.2rem;
+  text-decoration: none;
+}

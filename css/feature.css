@@ -2,7 +2,7 @@
   position: relative;
   height: 700px;
   color: #fff;
-  background: transparent url("../unfiled/33.png") local no-repeat center / 100vw;
+  background: transparent var(--bg-image) local no-repeat center / 100vw;
   margin-bottom: 10em;
 }
 

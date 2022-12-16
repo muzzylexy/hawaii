@@ -1,9 +1,16 @@
 .communities {
+  width: 100%;
+  background-color: #f9f6f5;
+}
+
+.communities .container {
   margin: 0 auto;
   width: var(--width);
   max-width: var(--max-width);
 }
 
 .communities .gallery {
+  width: var(--width);
+  max-width: var(--max-width);
   height: 200px;
 }
